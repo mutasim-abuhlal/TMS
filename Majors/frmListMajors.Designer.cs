@@ -1,0 +1,185 @@
+﻿namespace TMS.Majors
+{
+    partial class frmListMajors
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.txtFilterValue = new System.Windows.Forms.TextBox();
+            this.cbFilterBy = new System.Windows.Forms.ComboBox();
+            this.dgvSubjects = new System.Windows.Forms.DataGridView();
+            this.lbTotalRecords = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // txtFilterValue
+            // 
+            this.txtFilterValue.Location = new System.Drawing.Point(290, 255);
+            this.txtFilterValue.Name = "txtFilterValue";
+            this.txtFilterValue.Size = new System.Drawing.Size(186, 26);
+            this.txtFilterValue.TabIndex = 78;
+            this.txtFilterValue.Visible = false;
+            this.txtFilterValue.TextChanged += new System.EventHandler(this.txtFilterValue_TextChanged);
+            this.txtFilterValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterValue_KeyPress);
+            // 
+            // cbFilterBy
+            // 
+            this.cbFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFilterBy.FormattingEnabled = true;
+            this.cbFilterBy.Items.AddRange(new object[] {
+            "None",
+            "Major ID",
+            "Major Name"});
+            this.cbFilterBy.Location = new System.Drawing.Point(113, 254);
+            this.cbFilterBy.Name = "cbFilterBy";
+            this.cbFilterBy.Size = new System.Drawing.Size(165, 28);
+            this.cbFilterBy.TabIndex = 77;
+            this.cbFilterBy.SelectedIndexChanged += new System.EventHandler(this.cbFilterBy_SelectedIndexChanged);
+            // 
+            // dgvSubjects
+            // 
+            this.dgvSubjects.AllowUserToAddRows = false;
+            this.dgvSubjects.AllowUserToDeleteRows = false;
+            this.dgvSubjects.AllowUserToResizeColumns = false;
+            this.dgvSubjects.AllowUserToResizeRows = false;
+            this.dgvSubjects.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSubjects.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvSubjects.Location = new System.Drawing.Point(21, 294);
+            this.dgvSubjects.Name = "dgvSubjects";
+            this.dgvSubjects.Size = new System.Drawing.Size(724, 334);
+            this.dgvSubjects.TabIndex = 76;
+            // 
+            // lbTotalRecords
+            // 
+            this.lbTotalRecords.AutoSize = true;
+            this.lbTotalRecords.Location = new System.Drawing.Point(123, 634);
+            this.lbTotalRecords.Name = "lbTotalRecords";
+            this.lbTotalRecords.Size = new System.Drawing.Size(44, 20);
+            this.lbTotalRecords.TabIndex = 75;
+            this.lbTotalRecords.Text = "[???]";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(17, 634);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 20);
+            this.label4.TabIndex = 74;
+            this.label4.Text = "#Records:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(27, 254);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 20);
+            this.label2.TabIndex = 73;
+            this.label2.Text = "Filter By:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(251, 144);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(255, 55);
+            this.label1.TabIndex = 72;
+            this.label1.Text = "List Majors";
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = global::TMS.Properties.Resources.Close_32;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(616, 639);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(129, 41);
+            this.btnClose.TabIndex = 79;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TMS.Properties.Resources.TeacherMajor512;
+            this.pictureBox1.Location = new System.Drawing.Point(264, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(228, 129);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 71;
+            this.pictureBox1.TabStop = false;
+            // 
+            // frmListMajors
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(760, 692);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.txtFilterValue);
+            this.Controls.Add(this.cbFilterBy);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dgvSubjects);
+            this.Controls.Add(this.lbTotalRecords);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "frmListMajors";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "List Majors";
+            this.Load += new System.EventHandler(this.frmListMajors_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSubjects)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.TextBox txtFilterValue;
+        private System.Windows.Forms.ComboBox cbFilterBy;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dgvSubjects;
+        private System.Windows.Forms.Label lbTotalRecords;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+    }
+}
